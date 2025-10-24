@@ -24,7 +24,7 @@ helm install prometheus prometheus-community/kube-prometheus-stack -n monitoring
 Далее был применён манифест `deployment.yaml`, который описывает деплой мониторинговых компонентов.
 
 📸 *Фрагмент кода deployment.yaml:*  
-![Deployment](IMG_4932.jpeg)
+![Deployment](2.png)
 
 ---
 
