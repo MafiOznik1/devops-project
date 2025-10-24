@@ -16,7 +16,7 @@ helm install prometheus prometheus-community/kube-prometheus-stack -n monitoring
 ```
 
 *Скриншот состояния сервисов Prometheus (Endpoints):*
-![Проверка_Prometheus_Targets](‎1.png)
+![PrometheusTargets](‎1.png)
 
 ---
 
