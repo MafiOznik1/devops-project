@@ -16,7 +16,7 @@ helm install prometheus prometheus-community/kube-prometheus-stack -n monitoring
 ```
 
 *Скриншот состояния сервисов Prometheus (Endpoints):*
-![PrometheusTargets](‎1.png)
+
 
 ---
 
@@ -72,7 +72,7 @@ helm install prometheus prometheus-community/kube-prometheus-stack -n monitoring
 
 В Grafana были настроены алерты на превышение порогов нагрузки — например, при загрузке CPU выше 80%.
 
-📸 *Пример созданного алерта:*  
+*Пример созданного алерта:*  
 ![Alert](Alert.png)
 
 ---
