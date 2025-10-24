@@ -15,7 +15,7 @@ kubectl create namespace monitoring
 helm install prometheus prometheus-community/kube-prometheus-stack -n monitoring
 ```
 
-![Проверка Prometheus Targets](‎1.png)
+![Проверка_Prometheus_Targets](‎1.png)
 
 ---
 
