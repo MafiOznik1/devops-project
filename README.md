@@ -29,7 +29,7 @@ helm install prometheus prometheus-community/kube-prometheus-stack -n monitoring
 
 ---
 
-## 📊 Этап 3. Метрики CPU
+## Этап 3. Метрики CPU
 
 Метрика использует выражение:
 
@@ -37,12 +37,12 @@ helm install prometheus prometheus-community/kube-prometheus-stack -n monitoring
 100 - (avg by (instance) (rate(node_cpu_seconds_total{mode="idle"}[5m])) * 100)
 ```
 
-📈 *График загрузки CPU:*  
-![CPU usage](IMG_4892.jpeg)
+*График загрузки CPU:*  
+![CPU usage](C.png)
 
 ---
 
-## 💾 Этап 4. Метрики памяти (Memory usage)
+## Этап 4. Метрики памяти (Memory usage)
 
 Метрика:
 
@@ -50,12 +50,12 @@ helm install prometheus prometheus-community/kube-prometheus-stack -n monitoring
 100 * (1 - (node_memory_MemAvailable_bytes / node_memory_MemTotal_bytes))
 ```
 
-📈 *График использования памяти:*  
-![Memory usage](IMG_4893.jpeg)
+*График использования памяти:*  
+![Memory usage](M.png)
 
 ---
 
-## 💽 Этап 5. Метрики диска (Disk usage)
+## Этап 5. Метрики диска (Disk usage)
 
 Для отслеживания дискового пространства используется:
 
@@ -63,8 +63,8 @@ helm install prometheus prometheus-community/kube-prometheus-stack -n monitoring
 100 - ((node_filesystem_avail_bytes{mountpoint="/"} * 100) / node_filesystem_size_bytes{mountpoint="/"})
 ```
 
-📈 *График использования диска:*  
-![Disk usage](IMG_4894.jpeg)
+*График использования диска:*  
+![Disk usage](D.png)
 
 ---
 
