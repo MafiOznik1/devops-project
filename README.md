@@ -30,6 +30,18 @@ helm install prometheus prometheus-community/kube-prometheus-stack -n monitoring
 
 ---
 
+
+## Запуск в Minikube
+
+После деплоя приложения, проверяем состояние подов:
+
+```bash
+kubectl get pods -A
+```
+![Приложение](.png)
+
+
+
 ## Этап 3. Метрики CPU
 
 Метрика использует выражение:
