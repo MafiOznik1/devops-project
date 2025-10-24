@@ -15,6 +15,7 @@ kubectl create namespace monitoring
 helm install prometheus prometheus-community/kube-prometheus-stack -n monitoring
 ```
 
+*Скриншот состояния сервисов Prometheus (Endpoints):*
 ![Проверка_Prometheus_Targets](‎1.png)
 
 ---
@@ -23,7 +24,7 @@ helm install prometheus prometheus-community/kube-prometheus-stack -n monitoring
 
 Далее был применён манифест `deployment.yaml`, который описывает деплой мониторинговых компонентов.
 
-📸 *Фрагмент кода deployment.yaml:*  
+*Фрагмент кода deployment.yaml:*  
 ![Deployment](2.png)
 
 ---
