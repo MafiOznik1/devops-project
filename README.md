@@ -35,7 +35,7 @@ helm install prometheus prometheus-community/kube-prometheus-stack -n monitoring
 После деплоя приложения, проверяем состояние подов:
 
 ```bash
-kubectl get pods -A
+kubectl get pods -n monitoring
 ```
 ![Приложение](minik.png)
 
