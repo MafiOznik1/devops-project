@@ -87,3 +87,14 @@ helm install prometheus prometheus-community/kube-prometheus-stack -n monitoring
 - Настраивать уведомления (Alerts) о превышении порогов нагрузки.
 
 ---
+
+## Используемые технологии
+
+| Компонент | Назначение |
+|------------|------------|
+| **Minikube** | Локальный кластер Kubernetes |
+| **Prometheus** | Сбор метрик |
+| **Grafana** | Визуализация данных |
+| **Helm** | Установка чартов Prometheus stack |
+
+---
