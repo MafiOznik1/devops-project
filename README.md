@@ -78,6 +78,14 @@ helm install prometheus prometheus-community/kube-prometheus-stack -n monitoring
 
 ---
 
+
+## CI-процесс (jenkins-build.sh)
+Скрипт, имитирующий сборку Docker-образа:
+```bash
+./jenkins-build.sh
+```
+
+
 ## Результат
 
 В результате была настроена система мониторинга, позволяющая:
