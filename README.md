@@ -30,7 +30,6 @@ helm install prometheus prometheus-community/kube-prometheus-stack -n monitoring
 
 ---
 
-
 ## Запуск в Minikube
 
 После деплоя приложения, проверяем состояние подов:
@@ -38,9 +37,9 @@ helm install prometheus prometheus-community/kube-prometheus-stack -n monitoring
 ```bash
 kubectl get pods -A
 ```
-![Приложение](.png)
+![Приложение](minik.png)
 
-
+---
 
 ## Этап 3. Метрики CPU
 
